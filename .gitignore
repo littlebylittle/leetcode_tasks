@@ -1,0 +1,6 @@
+*~
+.idea/
+
+#don't follow *class files
+*.class
+**/target/

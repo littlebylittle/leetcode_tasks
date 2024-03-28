@@ -12,6 +12,7 @@ class Sum2Nums_0002Test {
         var left = new ListNode(8, new ListNode(9, new ListNode(9, new ListNode(9, new ListNode(2)))));
         var right = new ListNode(1);
         ListNode result = new Sum2Nums_0002().addTwoNumbers(left, right);
+        assertEquals(result.val, 9);
         StringBuilder sb = new StringBuilder();
         recursiveTraverse(result, sb);
         // 1___

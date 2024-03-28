@@ -30,4 +30,10 @@ class TokenizerATest {
         List<TokenB> res = new TokenizerA().parse("2-1+2");
         System.out.println(res.toString());
     }
+
+    @Test
+    void name5() {
+        List<TokenB> res = new TokenizerA().parse("  -(-1+2*3)");
+        System.out.println(res.toString());
+    }
 }
